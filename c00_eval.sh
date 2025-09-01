@@ -1,4 +1,5 @@
-#!/bin/bash/
+## TODO:
+## display file structure 
 
 ############## ex00 #######################
 echo -e "\n----------ex00----------"
