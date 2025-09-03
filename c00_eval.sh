@@ -1,5 +1,9 @@
+#!/bin/bash
+
 ## TODO:
 ## display file structure 
+## let user choose inputs
+## provide options for user to choose which projects to run
 
 ############## ex00 #######################
 echo -e "\n----------ex00----------"
@@ -122,7 +126,7 @@ echo -e "\n-----Norminette-----"
 norminette -R CheckForbiddenSourceHeader
 
 
-############### ex05 ############echo -e "-----Input: Output-----"###########
+############### ex05 ############
 echo -e "\n\n----------ex05----------"
 echo -e "-----Input: Output-----"
 cd ../ex05
