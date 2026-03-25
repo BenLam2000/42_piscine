@@ -302,6 +302,33 @@ echo -e "\n-----Norminette-----"
 norminette -R CheckForbiddenSourceHeader
 
 
+############## ex09 #######################
+echo -e "\n----------ex09----------"
+echo -e "-----Input: Output-----"
+cd ../ex09
+
+cat <<EOF > main.c
+#include <stdio.h>
+
+char	*ft_strcapitalize(char *str);
+
+int	main(void)
+{
+	char str1[] = "hi, how are you? 42words forty-two; fifty+and+one";
+
+	printf("before capitalize: %s\n", str1);
+	printf("after capitalize: %s\n", ft_strcapitalize(str1));
+}
+EOF
+
+cc -Wall -Wextra -Werror ft_strcapitalize.c main.c
+./a.out
+rm a.out main.c
+
+echo -e "\n-----Norminette-----"
+norminette -R CheckForbiddenSourceHeader
+
+
 
 
 
